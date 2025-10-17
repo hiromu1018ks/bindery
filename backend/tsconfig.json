@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es2022",  // 出力する Javascript のバージョン
+    "module": "ESNext",  // モジュールシステム。 Node の最新推奨である ESModules を採用
+    "outDir": "dist",    // outDir を設定してビルド成果物を dist にまとめる
+    "moduleResolution": "Node", // Node.js の import 解決をサポートする
+    "experimentalDecorators": false, // デコレータは使わない
+    "strict": true, // 型チェックを厳密にする
+    "allowImportingTsExtensions": true, // 拡張子を省略しない
+    "sourceMap": true, // ソースマップを出力しデバックしやすくする
+    "types": ["node"], // Node.js 環境でパス補完をを行うための型定義を読み込む
+    "allowSyntheticDefaultImports": true
+  },
+  // どのファイルをコンパイル対象にするか
+  "include": [
+    // src 配下の .tsファイルをまとめて対象
+    "src/**/*.ts"
+  ],
+  // コンパイル対象から除外するパス
+  "exclude": [
+    // 外部ライブラリのため除外
+    "node_modules"
+  ]
+}
