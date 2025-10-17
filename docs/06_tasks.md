@@ -2,8 +2,9 @@
 
 自分一人で学びながら進める想定で、依存関係と学習効果を踏まえた順番でチェックリストを並べています。各タスクは該当ドキュメントを参照しながら進めてください。
 
-1. [ ] **開発環境とリポジトリ骨子の準備**  
-    `frontend/`・`backend/` ディレクトリ、主要 `.env` テンプレートの作成、必須環境変数（`APP_USERNAME` など）と Secret Manager 方針の整理。（参考: `docs/01_requirements.md` 1章・6章, `docs/05_deploy_guide.md` 1章・9章）
+1. [x] **開発環境とリポジトリ骨子の準備**  
+    `frontend/`・`backend/` ディレクトリ、主要 `.env` テンプレートの作成、必須環境変数（`APP_USERNAME` など）と Secret Manager 方針の整理。（参考: `docs/01_requirements.md` 1章・6章, `docs/05_deploy_guide.md` 1章・9章）  
+    - 2025-10-17: Vite/Express の雛形を作成し、フロント/バック各 `.env.example` を整備。`docs/README_secrets.md` に Secret 管理手順を記録。
 2. [ ] **Secret Manager 運用の体験**  
     `SESSION_SECRET` の登録・ローテーション手順を実際に試し、開発環境への反映方法もまとめる。（参考: `docs/05_deploy_guide.md` 2.5章）
 3. [ ] **Cloud Memorystore (Redis) のプロビジョニング**  
